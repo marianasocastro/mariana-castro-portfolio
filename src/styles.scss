@@ -1,1 +1,263 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$gradient: linear-gradient(to right, #B16CEA 0%, #FF5E69 28%, #FF8A56 55%, #FFA84B 86%);
+$color-white-primary: #F0f2f5;
+$color-white-secondary: #ffffff;
+$color-black-primary: #161513;
+$color-black-secondary: #1c1c22;
+$color-purple: #B16CEA;
+$color-pink: #FF5E69;
+$color-orange-primary: #FF8A56;
+$color-orange-secondary: #ffa84b;
+$breakpoint-xs: 320px; // Pequenos dispositivos móveis
+$breakpoint-sm: 500px; // Dispositivos móveis médios
+$breakpoint-md: 845px; // Tablets ou telefones maiores em modo paisagem
+$breakpoint-lg: 1024px; // Tablets em modo paisagem e pequenos desktops
+$breakpoint-xl: 1200px; // Desktops grandes
+$border-radius: 20px;
+$container-max-width: 1296px;
+$container-padding: 15px;
+
+/*TEXT STYLES*/
+@mixin responsive-text($size, $weight, $height) {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+
+  @media (max-width: 768px) {
+    font-size: $size * 0.8; // Ajuste para telas menores
+  }
+}
+
+.hero-text{
+  @include responsive-text(50px, 600, 71px);
+}
+
+.text-h1{
+  @include responsive-text(40px, 500, 48px);
+  color: $color-white-primary;
+}
+
+.text-h2{
+  @include responsive-text(32px, 300, 40px);
+  color: $color-white-primary;
+}
+
+.text-h3{
+  @include responsive-text(28px, 400, 32px);
+  color: $color-white-primary;
+}
+
+.paragraph{
+  @include responsive-text(16px, 300, 24px);
+  letter-spacing: .4px;
+}
+
+.paragraph-bold{
+  @include responsive-text(16px, 500, 24px);
+  letter-spacing: .4px;
+}
+
+.text-details{
+  @include responsive-text(14px, 300, 24px);
+  letter-spacing: .4px;
+  // color: $color-grey
+}
+
+.text-tags{
+  @include responsive-text(14px, 300, 24px);
+  letter-spacing: .4px;
+  // background-color: $color-700-black;
+  border-radius: $border-radius;
+  padding: .25rem .75rem;
+}
+
+.link-default{
+  @include responsive-text(16px, 300, 24px);
+  letter-spacing: .4px;
+  color: $color-white-primary;
+  &:hover{
+    color: $color-purple;
+  }
+}
+
+.link-small{
+  @include responsive-text(14px, 300, 24px);
+  letter-spacing: .4px;
+  color: $color-white-primary;
+  &:hover{
+    color: $color-purple;
+  }
+}
+
+.active-link-default{
+  color: $color-purple !important;
+}
+
+.gradient-text {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Mixin para botões
+@mixin btn-styles($bg-color, $border-color, $text-color) {
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
+  color: $text-color;
+  padding: 5px 15px;
+  height: 40px;
+  @include responsive-text(16px, 500, 24px);
+  &:hover {
+    background-color: darken($bg-color, 10%);
+    border-color: darken($bg-color, 10%);
+    cursor: pointer;
+  }
+  a{
+    color: $text-color;
+  }
+}
+
+.btn-primary{
+  @include btn-styles($color-purple, $color-purple, $color-white-primary);
+}
+
+.btn-secondary{
+  @include btn-styles(transparent, $color-white-primary, $color-white-primary);
+}
+
+.btn-tertiary{
+  @include btn-styles($color-white-primary, $color-white-primary, $color-black-primary);
+}
+
+.btn-gradient{
+  background: $gradient !important;
+  border: none !important;
+  &:hover{
+    background-color: $color-purple !important;
+    color: $color-black-primary;
+  }
+}
+
+
+
+/*START CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    // font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+}
+/*END CSS RESET*/
+
+body{
+  background-color: $color-black-primary;
+}
+
+/* Mobile-First Styles */
+.component {
+  width: 100%;
+  padding: 10px;
+}
+
+.section{
+  margin-top: 50px;
+  h3{
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: $breakpoint-sm) {
+  .component {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: $breakpoint-md) {
+  .component {
+    width: 33.33%;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: $breakpoint-lg) {
+  .component {
+    width: 25%;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto; // Centraliza o contêiner
+  padding: 0 $container-padding;
+
+  // Estilos responsivos para padding
+  @media (min-width: $breakpoint-sm) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding: 0 60px;
+  }
+
+}
+
+
+
