@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 $gradient: linear-gradient(to right, #B16CEA 0%, #FF5E69 28%, #FF8A56 55%, #FFA84B 86%);
+$gradient_2: linear-gradient(to right, #FFA84B 0%, #FF8A56 24%, #FF5E69 51%, #B16CEA 78%);
 $color-white-primary: #F0f2f5;
 $color-white-secondary: #ffffff;
 $color-black-primary: #161513;
@@ -40,13 +41,18 @@ $container-padding: 15px;
 }
 
 .text-h2{
-  @include responsive-text(32px, 300, 40px);
+  @include responsive-text(36px, 600, 44px);
   color: $color-white-primary;
 }
 
 .text-h3{
-  @include responsive-text(28px, 400, 32px);
+  @include responsive-text(28px, 500, 32px);
   color: $color-white-primary;
+}
+
+.text-h4{
+  @include responsive-text(24px, 400, 28px);
+
 }
 
 .paragraph{
@@ -66,15 +72,15 @@ $container-padding: 15px;
 }
 
 .text-tags{
-  @include responsive-text(14px, 300, 24px);
+  @include responsive-text(10px, 300, 20px);
   letter-spacing: .4px;
-  // background-color: $color-700-black;
+  background-color: $color-black-primary;
   border-radius: $border-radius;
   padding: .25rem .75rem;
 }
 
 .link-default{
-  @include responsive-text(16px, 300, 24px);
+  @include responsive-text(16px, 400, 24px);
   letter-spacing: .4px;
   color: $color-white-primary;
   &:hover{
@@ -101,8 +107,14 @@ $container-padding: 15px;
   -webkit-text-fill-color: transparent;
 }
 
+.gradient-text-2 {
+  background: $gradient_2;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // Mixin para botões
-@mixin btn-styles($bg-color, $border-color, $text-color) {
+@mixin btn-styles($bg-color, $border-color, $text-color, $text-color-hover) {
   background-color: $bg-color;
   border-radius: $border-radius;
   border: 1px solid $border-color;
@@ -114,22 +126,56 @@ $container-padding: 15px;
     background-color: darken($bg-color, 10%);
     border-color: darken($bg-color, 10%);
     cursor: pointer;
+    color: $text-color-hover;
   }
-  a{
+  a, p, span{
     color: $text-color;
+    &:hover{
+      color: $text-color-hover;
+    }
+  }
+}
+
+@mixin btn-styles-small($bg-color, $border-color, $text-color, $text-color-hover) {
+  background-color: $bg-color;
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
+  color: $text-color;
+  padding: 5px 10px;
+  height: 30px;
+  @include responsive-text(12px, 500, 20px);
+  &:hover {
+    background-color: darken($bg-color, 10%);
+    border-color: darken($bg-color, 10%);
+    cursor: pointer;
+    color: $text-color-hover;
+  }
+  a, p, span{
+    color: $text-color;
+    &:hover{
+      color: $text-color-hover;
+    }
   }
 }
 
 .btn-primary{
-  @include btn-styles($color-purple, $color-purple, $color-white-primary);
+  @include btn-styles($color-purple, $color-purple, $color-white-primary, $color-black-primary);
+}
+
+.btn-primary-small{
+  @include btn-styles-small($color-purple, $color-purple, $color-white-primary, $color-black-primary);
 }
 
 .btn-secondary{
-  @include btn-styles(transparent, $color-white-primary, $color-white-primary);
+  @include btn-styles(transparent, $color-white-primary, $color-white-primary, $color-white-primary);
+}
+
+.btn-secondary-small{
+  @include btn-styles-small(transparent, $color-white-primary, $color-white-primary, $color-white-primary);
 }
 
 .btn-tertiary{
-  @include btn-styles($color-white-primary, $color-white-primary, $color-black-primary);
+  @include btn-styles($color-white-primary, $color-white-primary, $color-black-primary, $color-black-primary);
 }
 
 .btn-gradient{
@@ -258,6 +304,25 @@ body{
   }
 
 }
+
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: $color-white-primary; /* Cor do trilho da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-black-primary; /* Cor da barra de rolagem */
+  border-radius: 2px; /* Bordas arredondadas */
+  &:hover{
+    background: $color-black-secondary; /* Cor da barra de rolagem ao passar o mouse */
+  }
+}
+
 
 
 

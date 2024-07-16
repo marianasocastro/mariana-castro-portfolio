@@ -1,0 +1,39 @@
+@import '../../../styles.scss';
+
+.carousel{
+  width: 100%;
+  overflow: hidden;
+  padding: 33px 0;
+  margin: 100px auto !important;
+  .colorfull-div{
+    position: absolute;
+    width: 100%;
+    background: $gradient;
+    height: 50px;
+    overflow-x: hidden;
+  }
+  .gray-div{
+    height: 50px;
+    background-color: $color-white-primary;
+    color: $color-black-primary;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: rotate(-2deg);
+    width: 101%;
+    .text-h4{
+      line-height: 50px !important;
+      span{
+        margin: 0 20px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,15 @@
+<section class="container">
+  <div class="tools-text">
+    <h2 class="text-h2 gradient-text">Tools I use</h2>
+    <p class="paragraph">Here are some awesome tools I use to make development and problem solving easier and faster for my user.</p>
+  </div>
+
+  <div class="tools-cards">
+    <div class="tool-card" *ngFor="let tool of tools">
+      <img [src]="tool.image" [alt]="tool.toolName">
+      <p class="paragraph">{{tool.toolName}}</p>
+    </div>
+
+
+  </div>
+</section>

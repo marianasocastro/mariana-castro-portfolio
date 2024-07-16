@@ -3,21 +3,28 @@
 header{
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
   height: 100vh;
+  position: relative;
+  app-navbar{
+    z-index: 2;
+    height: auto;
+  }
   .header-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     column-gap: 50px;
     width: 100%;
+    z-index: 2;
+    height: calc(100vh - 70px);
     .header-text{
-      width: 50%;
+      width: 80%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       row-gap: 16px;
       color: $color-white-primary;
       .btns{
@@ -25,18 +32,12 @@ header{
         flex-direction: row;
         align-items: center;
         column-gap: 16px;
+        justify-content: center;
+      }
+      .paragraph{
+        width: 85%;
       }
     }
-    // .header-img{
-    //   width: 50%;
-    //   display: flex;
-    //   justify-content: center;
-    //   img{
-    //     width: auto;
-    //     height: 400px;
-    //   }
-
-    // }
     .header-img {
       background-image: url('../../../assets/Mariana-Castro.jpg');
       background-size: cover;
@@ -48,6 +49,30 @@ header{
       justify-content: center;
     }
   }
+}
+
+
+#video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.radial{
+  background: radial-gradient(circle, rgba(22, 21, 19, .7), rgba(22, 21, 19, .9));
 }
 
 
