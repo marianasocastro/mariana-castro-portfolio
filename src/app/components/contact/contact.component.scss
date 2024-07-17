@@ -67,3 +67,31 @@ section{
     }
   }
 }
+
+@media (max-width: $breakpoint-md) {
+
+  section{
+    flex-direction: column;
+    .contact-text{
+      width: 70%;
+      margin-bottom: 30px;
+    }
+    form{
+      width: 100%;
+    }
+  }
+
+
+
+}
+
+@media (max-width: $breakpoint-sm) {
+
+  section{
+    .contact-text{
+      width: 100%;
+    }
+  }
+
+
+}

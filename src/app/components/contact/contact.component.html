@@ -1,37 +1,35 @@
-<section class="container">
+<section id="contact" class="container">
   <div class="contact-text">
-    <h2 class="text-h2 gradient-text">Get in touch</h2>
-    <p class="paragraph">Have a project in mind? Looking to partner or work together? Reach out through the form and
-      I'll get back to you in the next 48 hours.
-    </p>
+    <h2 class="text-h2 gradient-text">{{ 'CONTACT.TITLE' | translate }}</h2>
+    <p class="paragraph">{{ 'CONTACT.TEXT' | translate }}</p>
     <div class="navbar-social">
-      <a class="social-icons" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a class="social-icons" href="#"><i class="fa-brands fa-github"></i></a>
-      <a class="social-icons" href="#"><i class="fa-solid fa-envelope"></i></a>
+      <a class="social-icons" href="https://www.linkedin.com/in/marianasocastro/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a class="social-icons" href="https://github.com/marianasocastro" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a class="social-icons" href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </div>
 
   <form action="">
     <div class="form-section">
-      <label class="paragraph" for="name">Your Name</label>
-      <input class="paragraph" type="text" name="name" id="name" placeholder="Enter your name">
+      <label class="paragraph" for="name">{{ 'CONTACT.FORM_NAME' | translate }}</label>
+      <input class="paragraph" type="text" name="name" id="name" placeholder="{{ 'CONTACT.FORM_NAME_PLACEHOLDER' | translate }}">
     </div>
 
     <div class="form-section">
-      <label class="paragraph" for="email">Your E-mail</label>
-      <input class="paragraph" type="email" name="email" id="email" placeholder="Enter your e-mail">
+      <label class="paragraph" for="email">{{ 'CONTACT.FORM_EMAIL' | translate }}</label>
+      <input class="paragraph" type="email" name="email" id="email" placeholder="{{ 'CONTACT.FORM_EMAIL_PLACEHOLDER' | translate }}">
     </div>
 
     <div class="form-section">
-      <label class="paragraph" for="subject">Subject</label>
-      <input class="paragraph" type="text" name="subject" id="subject" placeholder="Add a subject">
+      <label class="paragraph" for="subject">{{ 'CONTACT.FORM_SUBJECT' | translate }}</label>
+      <input class="paragraph" type="text" name="subject" id="subject" placeholder="{{ 'CONTACT.FORM_SUBJECT_PLACEHOLDER' | translate }}">
     </div>
 
     <div class="form-section">
-      <label class="paragraph" for="subject">Your message</label>
-      <textarea class="paragraph" name="subject" id="subject" placeholder="Tell me a bit more what you are looking for..."></textarea>
+      <label class="paragraph" for="subject">{{ 'CONTACT.FORM_MESSAGE' | translate }}</label>
+      <textarea class="paragraph" name="subject" id="subject" placeholder="{{ 'CONTACT.FORM_MESSAGE_PLACEHOLDER' | translate }}"></textarea>
     </div>
-    <button type="submit" class="btn-primary btn-gradient">SUBMIT NOW</button>
+    <button type="submit" class="btn-primary btn-gradient">{{ 'CONTACT.BTN_SUBMIT' | translate }}</button>
   </form>
 
 </section>

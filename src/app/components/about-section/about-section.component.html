@@ -1,26 +1,24 @@
-<section class="container">
+<section id="about" class="container">
   <div class="mariana-img">
     <img src="../../../assets/Mariana-Castro.jpg" alt="Mariana Castro's Photo">
   </div>
 
   <div class="about-text">
-    <h2 class="text-h2 gradient-text">About me</h2>
-    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non nisl mollis, feugiat justo sed, cursus tortor.
-      Nunc turpis arcu, sagittis ac odio et, tincidunt consectetur turpis.</p>
-      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non nisl mollis, feugiat justo sed, cursus tortor.
-        Nunc turpis arcu, sagittis ac odio et, tincidunt consectetur turpis.</p>
-      <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non nisl mollis, feugiat justo sed, cursus tortor.
-        Nunc turpis arcu, sagittis ac odio et, tincidunt consectetur turpis.</p>
+    <h2 class="text-h2 gradient-text">{{ 'ABOUT.TITLE' | translate }}</h2>
+    <p class="paragraph">{{ 'ABOUT.PARAGRAPH_1' | translate }}</p>
+    <p class="paragraph">{{ 'ABOUT.PARAGRAPH_2' | translate }}</p>
+    <p class="paragraph">{{ 'ABOUT.PARAGRAPH_3' | translate }}</p>
+
 
         <!-- <div class="btns">
           <button class="btn-primary btn-gradient"><a href="">GET IN TOUCH</a></button>
           <button class="btn-secondary"><a class="resume" href="" download=""><i class="fa-solid fa-download"></i>RESUME</a></button>
         </div> -->
       <div class="navbar-social">
-        <a class="social-icons" href="#" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a class="social-icons" href="#" title="github"><i class="fa-brands fa-github"></i></a>
-        <a class="social-icons" href="#" title="email"><i class="fa-solid fa-envelope"></i></a>
-        <a class="social-icons resume link-default" href="#" download ><i class="fa-solid fa-download"></i><span>RESUME</span></a>
+        <a class="social-icons" href="https://www.linkedin.com/in/marianasocastro/" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="social-icons" href="https://github.com/marianasocastro" target="_blank" title="github"><i class="fa-brands fa-github"></i></a>
+        <a class="social-icons" href="#" title="email" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a class="social-icons resume link-default" href="#" download ><i class="fa-solid fa-download"></i><span>{{ 'ABOUT.RESUME' | translate }}</span></a>
       </div>
   </div>
 </section>

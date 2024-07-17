@@ -1,0 +1,56 @@
+{
+  "NAVBAR": {
+    "ABOUT": "About",
+    "PROJECTS": "Projects",
+    "RESUME": "Resume",
+    "CONTACT": "Contact",
+    "ENGLISH": "EN",
+    "PORTUGUESE": "PT",
+    "LETS_TALK": "LET'S TALK"
+  },
+  "HEADER":{
+    "HELLO":"Hello, I'm Mariana,",
+    "ROLE": "Frontend Developer and UI Designer",
+    "TEXT": "I thrive on creativity, embrace challenges, and am meticulously attentive to details, ensuring every project I work on is not only functional but also beautifully crafted.",
+    "BTN_TALK": "GET IN TOUCH",
+    "BTN_PROJECTS": "VIEW MY PROJECTS"
+  },
+  "ABOUT":{
+    "TITLE": "About me",
+    "PARAGRAPH_1":"I'm a Frontend Developer with 2 years of experience, specializing in Angular and TypeScript, based in São Paulo, Brazil. My expertise lies in prototyping and developing responsive and interactive web applications using a stack that includes HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, Angular, and Figma.",
+    "PARAGRAPH_2":"I place a strong emphasis on collaboration, actively contributing innovative ideas in web development. Beyond my professional endeavors, I maintain a proactive approach, eagerly offering technical insights and suggestions that enhance project outcomes.",
+    "PARAGRAPH_3":"Outside of work, I remain dedicated to exploring the latest trends and advancements in Frontend development, continuously honing my skills in Angular, TypeScript, UI libraries, best practices, and automated testing methodologies.",
+    "RESUME": "RESUME"
+  },
+  "TOOLS":{
+    "TITLE": "Tools I use",
+    "TEXT": "Here are some awesome tools I use to make development and problem solving easier and faster for my user."
+  },
+  "PROJECTS":{
+    "TITLE": "My projects",
+    "STREAMING":{
+      "NAME":"Streaming Platform",
+      "ABOUT":"This project is a streaming platform developed using Angular, consuming The Movie DB API, designed to provide a responsive experience on mobile devices and iPads. The main focus was on TypeScript for safer and scalable code, utilizing SCSS for styling, and applying best development practices."
+    },
+    "POKEMON":{
+      "NAME":"Pokémon Deck Builder",
+      "ABOUT":"Responsive application developed using Angular 16+, Tailwind CSS, and the Infragistics UI library. The application allows players to build card decks using the Pokémon TCG API."
+    },
+    "BTN_BROWSER": "OPEN IN BROWSER",
+    "BTN_DETAILS": "SEE DETAILS"
+
+  },
+  "CONTACT":{
+    "TITLE": "Get in touch",
+    "TEXT":"Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.",
+    "FORM_NAME": "Your Name",
+    "FORM_NAME_PLACEHOLDER": "Enter your name",
+    "FORM_EMAIL": "Your E-mail",
+    "FORM_EMAIL_PLACEHOLDER": "Enter your e-mail",
+    "FORM_SUBJECT": "Subject",
+    "FORM_SUBJECT_PLACEHOLDER": "Add a subject",
+    "FORM_MESSAGE": "Your message",
+    "FORM_MESSAGE_PLACEHOLDER": "Tell me a bit more what you are looking for...",
+    "BTN_SUBMIT":"SUBMIT NOW"
+  }
+}

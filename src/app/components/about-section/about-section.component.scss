@@ -87,3 +87,23 @@ section{
 //     column-gap: 8px;
 //   }
 // }
+
+
+@media (max-width: $breakpoint-md) {
+
+
+
+}
+
+@media (max-width: $breakpoint-sm) {
+
+  section{
+    flex-direction: column;
+    .mariana-img{
+      width: 100%;
+    }
+    .about-text{
+      width: 100%;
+    }
+  }
+}

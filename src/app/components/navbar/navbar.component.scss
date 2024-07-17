@@ -61,6 +61,37 @@
 }
 
 
+.custom-select {
+  background: transparent;
+  color: $color-white-primary;
+  border: none;
+  padding: 5px;
+  option{
+    background: $color-black-primary;
+    color: $color-white-primary;
+    border: none;
+    &:hover{
+      cursor: pointer;
+      color: $color-purple;
+    }
+  }
+  &:focus {
+    outline: none;
+    border: none;
+  }
+  &:hover{
+    cursor: pointer;
+    color: $color-purple;
+  }
+}
+
+
+.custom-select-container {
+  position: relative;
+  display: inline-block;
+}
+
+
 @media (max-width: $breakpoint-md) {
   .navbar-toggler {
     display: block; // Shows the toggler button on smaller screens
@@ -71,12 +102,15 @@
     top: 60px; // Positions the menu below the navbar
     right: 0; // Aligns the menu to the right
     background-color: $color-black-secondary;
-    z-index: 0; // Ensures the navbar-collapse is below the toggler button
+    z-index: 10; // Ensures the navbar-collapse is below the toggler button
+    width: 100%;
     .navbar-nav{
       flex-direction: column; // Stacks the items vertically
-      align-items: flex-start;
+      align-items: center;
+      text-align: center;
       padding: 10px 20px;
       row-gap: 14px;
+
       .nav-item{
         width: 100px;
       }

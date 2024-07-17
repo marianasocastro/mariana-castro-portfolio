@@ -83,6 +83,28 @@
 }
 
 
+@media (max-width: $breakpoint-md) {
+
+  .card-project{
+    flex-direction: column;
+    height: auto;
+    row-gap: 12px;
+    img{
+      width: 100%;
+
+    }
+    .card-text{
+      width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: $breakpoint-sm) {
+
+}
+
+
 
 
 

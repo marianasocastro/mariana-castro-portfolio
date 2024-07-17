@@ -42,7 +42,6 @@ section{
     align-items: center;
     text-align: center;
     gap: 10px;
-
     width: 144px;
     img{
       height: 40px;
@@ -51,6 +50,44 @@ section{
       color: $color-white-primary;
     }
   }
+}
+
+@media (max-width: $breakpoint-md) {
+
+  section{
+    .tools-text{
+      width: 70%;
+    }
+
+  }
+
+
+
+
+}
+
+@media (max-width: $breakpoint-sm) {
+
+  section{
+    .tools-text{
+      width: 100%;
+    }
+  }
+
+  section{
+    .tools-cards{
+      column-gap: 20px;
+      .tool-card{
+        padding: 10px 15px;
+        width: 100px;
+      }
+
+    }
+
+  }
+
+
+
 }
 
 

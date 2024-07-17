@@ -1,0 +1,56 @@
+{
+  "NAVBAR": {
+    "ABOUT": "Sobre",
+    "PROJECTS": "Projetos",
+    "RESUME": "Currículo",
+    "CONTACT": "Contato",
+    "ENGLISH": "EN",
+    "PORTUGUESE": "PT",
+    "LETS_TALK": "CONTATO"
+  },
+  "HEADER":{
+    "HELLO":"Oi, eu sou Mariana,",
+    "ROLE": "Desenvolvedora Frontend e UI Designer",
+    "TEXT": "Eu prospero na criatividade, abraço desafios e sou meticulosamente atento aos detalhes, garantindo que cada projeto em que trabalho não seja apenas funcional, mas também cuidadosamente elaborado.",
+    "BTN_TALK": "ENTRE EM CONTATO",
+    "BTN_PROJECTS": "VEJA MEUS PROJETOS"
+  },
+  "ABOUT":{
+    "TITLE": "Sobre mim",
+    "PARAGRAPH_1":"Sou Desenvolvedora Frontend com 2 anos de experiência, especializada em Angular e TypeScript, baseada em São Paulo, Brasil. Minha expertise está na prototipação e desenvolvimento de aplicações web responsivas e interativas utilizando HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, Angular e Figma.",
+    "PARAGRAPH_2":"Dou grande ênfase à colaboração, contribuindo ativamente com ideias inovadoras no desenvolvimento web. Além dos meus esforços profissionais, mantenho uma abordagem proativa, oferecendo insights técnicos e sugestões que melhoram os resultados dos projetos.",
+    "PARAGRAPH_3":"Fora do trabalho, permaneço dedicada a explorar as últimas tendências e avanços no desenvolvimento de Frontend, aprimorando constantemente minhas habilidades em Angular, TypeScript, bibliotecas de UI, melhores práticas e metodologias de teste automatizado.",
+    "RESUME": "CURRÍCULO"
+  },
+  "TOOLS":{
+    "TITLE": "Ferramentas que eu utilizo",
+    "TEXT": "Aqui estão algumas ferramentas incríveis que eu uso para tornar o desenvolvimento e a resolução de problemas mais fáceis e rápidos para o meu usuário."
+  },
+  "PROJECTS":{
+    "TITLE": "Meus projetos",
+    "STREAMING":{
+      "NAME":"Plataforma de Streaming",
+      "ABOUT":"Este projeto é uma plataforma de streaming desenvolvida com Angular, consumindo a API do The Movie DB, projetada para oferecer uma experiência responsiva em dispositivos móveis e iPads. O foco principal foi no TypeScript para um código mais seguro e escalável, utilizando SCSS para estilos e aplicando as melhores práticas de desenvolvimento."
+    },
+    "POKEMON":{
+      "NAME":"Construtor de Baralhos Pokémon",
+      "ABOUT":"Aplicação responsiva desenvolvida com Angular 16+, Tailwind CSS e a biblioteca de UI Infragistics. A aplicação permite que os jogadores montem baralhos de cartas utilizando a API do Pokémon TCG."
+    },
+    "BTN_BROWSER": "ABRIR NO NAVEGADOR",
+    "BTN_DETAILS": "VER DETALHES"
+
+  },
+  "CONTACT":{
+    "TITLE": "Entre em contato",
+    "TEXT":"Tem um projeto em mente? Gostaria de fazer uma parceria ou trabalhar juntos? Entre em contato através do formulário e eu retornarei em até 48 horas.",
+    "FORM_NAME": "Seu Nome",
+    "FORM_NAME_PLACEHOLDER": "Insira seu nome",
+    "FORM_EMAIL": "Seu E-mail",
+    "FORM_EMAIL_PLACEHOLDER": "Insira seu e-mail",
+    "FORM_SUBJECT": "Assunto",
+    "FORM_SUBJECT_PLACEHOLDER": "Adicione um assunto",
+    "FORM_MESSAGE": "Sua Mensagem",
+    "FORM_MESSAGE_PLACEHOLDER": "Me fale um pouco mais sobre sua idéia...",
+    "BTN_SUBMIT":"ENVIAR AGORA"
+  }
+}

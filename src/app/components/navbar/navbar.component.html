@@ -2,32 +2,37 @@
 <nav class="navbar container">
   <a class="navbar-brand" routerLink="">
     <h3 class="text-h3">Mariana Castro</h3>
-      <!-- <img src="../../../assets/logo-streaming.png" alt="Logo Streaming"> -->
   </a>
   <div class="navbar-collapse" id="navbarNav" [ngClass]="{'show': isNavbarOpen}">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link link-default" routerLink="" routerLinkActive="active-link-default">Home</a>
+        </li> -->
+        <li class="nav-item">
+            <a class="nav-link link-default" href="#about">{{ 'NAVBAR.ABOUT' | translate }}</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link link-default" href="#">About me</a>
+            <a class="nav-link link-default" href="#projects">{{ 'NAVBAR.PROJECTS' | translate }}</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link link-default" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-default" href="#">Resume</a>
+          <a class="nav-link link-default" download="">{{ 'NAVBAR.RESUME' | translate }}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link link-default" href="#">Contact</a>
+        <a class="nav-link link-default" href="#contact">{{ 'NAVBAR.CONTACT' | translate }}</a>
       </li>
+
       <li class="nav-item">
-        <button class="btn-tertiary show-navbar-btn" type="button">LET'S TALK</button>
+        <button class="btn-tertiary show-navbar-btn" type="button"><a href="#contact">{{ 'NAVBAR.LETS_TALK' | translate }}</a></button>
       </li>
     </ul>
   </div>
+
   <div class="btns">
-    <button class="btn-primary btn-gradient hide-btn" type="button"><a href="">LET'S TALK</a></button>
+    <select (change)="switchLanguage($event)" class="custom-select">
+      <option value="en">{{ 'NAVBAR.ENGLISH' | translate }}</option>
+      <option value="pt">{{ 'NAVBAR.PORTUGUESE' | translate }}</option>
+    </select>
+    <button class="btn-primary btn-gradient hide-btn" type="button"><a href="#contact">{{ 'NAVBAR.LETS_TALK' | translate }}</a></button>
     <button class="navbar-toggler" (click)="toggleNavbar()">
       <span></span>
       <span></span>

@@ -17,10 +17,10 @@ header{
     text-align: center;
     column-gap: 50px;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
     height: calc(100vh - 70px);
     .header-text{
-      width: 80%;
+      width: 81%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -79,17 +79,39 @@ header{
 
 @media (max-width: $breakpoint-md) {
 
-  .header-content{
-    flex-direction: column;
-    align-items: center;
-    row-gap: 50px;
-    .header-text{
-      width: 70%;
+  header{
+    .header-content{
+      flex-direction: column;
+      align-items: center;
+      row-gap: 50px;
+      .header-text{
+        width: 80%;
+      }
     }
+
   }
+
 }
 
 @media (max-width: $breakpoint-sm) {
+
+
+  header{
+    .header-content{
+      .header-text{
+        width: 100%;
+      }
+
+    }
+
+  }
+
+
+
+  .hero-text{
+    font-size: 30px !important;
+    line-height: 43px !important;
+  }
 
 
 }

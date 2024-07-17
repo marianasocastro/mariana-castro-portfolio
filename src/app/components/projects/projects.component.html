@@ -1,52 +1,22 @@
-<section class="container">
-  <h2 class="text-h2 gradient-text">My projects</h2>
+<section id="projects" class="container">
+  <h2 class="text-h2 gradient-text">{{ 'PROJECTS.TITLE' | translate}}</h2>
 
   <div class="cards">
 
-
-
-
-    <div class="card-project">
-      <img src="../../../assets/projects/streaming/capa_readme.png" alt="">
+    <div *ngFor="let project of projects" class="card-project">
+      <img [src]= project.image alt="">
       <div class="card-text">
-        <div class="tags">
-          <span class="text-tags">ANGULAR</span>
-          <span class="text-tags">TYPESCRIPT</span>
-          <span class="text-tags">SASS</span>
+        <div  class="tags">
+          <span *ngFor="let tag of project.tags" class="text-tags">{{tag}}</span>
         </div>
-        <h3 class="text-h3">Streaming Platform</h3>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non nisl mollis, feugiat justo sed, cursus tortor.
-          Nunc turpis arcu, sagittis ac odio et, tincidunt consectetur turpis.
+        <h3 class="text-h3">{{ project.name | translate}}</h3>
+        <p class="paragraph">{{ project.about | translate}}
         </p>
         <div class="btns">
-          <button class="btn-primary-small btn-gradient"><a href="">OPEN IN BROWSER</a></button>
-          <button class="btn-secondary-small"><a href="">SEE DETAILS</a></button>
+          <button class="btn-primary-small btn-gradient"><a href="">{{ 'PROJECTS.BTN_BROWSER' | translate}}</a></button>
+          <button class="btn-secondary-small"><a href="">{{ 'PROJECTS.BTN_DETAILS' | translate}}</a></button>
         </div>
       </div>
-    </div>
-
-
-
-
-    <div class="card-project">
-      <img src="../../../assets/projects/pokemon/homePage.png" alt="">
-      <div class="card-text">
-        <div class="tags">
-          <span class="text-tags">ANGULAR</span>
-          <span class="text-tags">TYPESCRIPT</span>
-          <span class="text-tags">SASS</span>
-        </div>
-        <h3 class="text-h3">Streaming Platform</h3>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non nisl mollis, feugiat justo sed, cursus tortor.
-          Nunc turpis arcu, sagittis ac odio et, tincidunt consectetur turpis.
-        </p>
-        <div class="btns">
-          <button class="btn-primary-small btn-gradient"><a href="">OPEN IN BROWSER</a></button>
-          <button class="btn-secondary-small"><a href="">SEE DETAILS</a></button>
-        </div>
-      </div>
-
-
     </div>
 
   </div>
