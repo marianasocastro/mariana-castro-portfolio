@@ -97,6 +97,8 @@ $container-padding: 15px;
   }
 }
 
+
+
 .active-link-default{
   color: $color-purple !important;
 }
@@ -108,9 +110,14 @@ $container-padding: 15px;
 }
 
 .gradient-text-2 {
-  background: $gradient_2;
+  background: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  &:hover{
+    // background: $color-purple;
+    cursor: pointer;
+  }
 }
 
 // Mixin para botões

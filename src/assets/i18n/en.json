@@ -1,6 +1,6 @@
 {
   "NAVBAR": {
-    "ABOUT": "About",
+    "ABOUT": "About me",
     "PROJECTS": "Projects",
     "RESUME": "Resume",
     "CONTACT": "Contact",
@@ -11,16 +11,17 @@
   "HEADER":{
     "HELLO":"Hello, I'm Mariana,",
     "ROLE": "Frontend Developer and UI Designer",
-    "TEXT": "I thrive on creativity, embrace challenges, and am meticulously attentive to details, ensuring every project I work on is not only functional but also beautifully crafted.",
-    "BTN_TALK": "GET IN TOUCH",
-    "BTN_PROJECTS": "VIEW MY PROJECTS"
+    "TEXT": "I value creativity, enjoy tackling challenges, and pay close attention to detail, ensuring that every project I work on is both functional and well-crafted.",
+    "BTN_TALK": "VIEW MY PROJECTS",
+    "BTN_PROJECTS": "ABOUT ME"
   },
   "ABOUT":{
     "TITLE": "About me",
-    "PARAGRAPH_1":"I'm a Frontend Developer with 2 years of experience, specializing in Angular and TypeScript, based in São Paulo, Brazil. My expertise lies in prototyping and developing responsive and interactive web applications using a stack that includes HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, Angular, and Figma.",
-    "PARAGRAPH_2":"I place a strong emphasis on collaboration, actively contributing innovative ideas in web development. Beyond my professional endeavors, I maintain a proactive approach, eagerly offering technical insights and suggestions that enhance project outcomes.",
-    "PARAGRAPH_3":"Outside of work, I remain dedicated to exploring the latest trends and advancements in Frontend development, continuously honing my skills in Angular, TypeScript, UI libraries, best practices, and automated testing methodologies.",
-    "RESUME": "RESUME"
+    "PARAGRAPH_1":"I am a Frontend Developer with 2 years of experience, specializing in Angular and TypeScript, based in São Paulo, Brazil. I have expertise in prototyping and developing responsive and interactive web applications using HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, Angular, and Figma.",
+    "PARAGRAPH_2":"I value collaboration, am proactive, and enjoy contributing ideas and insights to various projects I work on. Additionally, I strive to stay updated with the latest trends in my field, maintaining a study routine that includes Angular, TypeScript, UI libraries, best practices, and automated testing methodologies.",
+    "PARAGRAPH_3":"In my free time, I enjoy going to the cinema, listening to music, and engaging in outdoor activities like cycling or hiking.",
+    "RESUME": "RESUME",
+    "RESUME_LINK": "../../../assets/Mariana Castro - Resume.pdf"
   },
   "TOOLS":{
     "TITLE": "Tools I use",
@@ -42,7 +43,7 @@
   },
   "CONTACT":{
     "TITLE": "Get in touch",
-    "TEXT":"Have a project in mind? Looking to partner or work together? Reach out through the form and I'll get back to you in the next 48 hours.",
+    "TEXT":"Have a project in mind? Looking to partner or work together? Reach out through e-mail and I'll get back to you in the next 48 hours.",
     "FORM_NAME": "Your Name",
     "FORM_NAME_PLACEHOLDER": "Enter your name",
     "FORM_EMAIL": "Your E-mail",

@@ -92,6 +92,22 @@ section{
 @media (max-width: $breakpoint-md) {
 
 
+  section{
+    flex-direction: column;
+    .mariana-img{
+      justify-content: center;
+      width: 100%;
+      img{
+        width: 50%;
+      }
+    }
+    .about-text{
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+
 
 }
 
@@ -100,10 +116,13 @@ section{
   section{
     flex-direction: column;
     .mariana-img{
-      width: 100%;
+      img{
+        width: 100%;
+      }
     }
     .about-text{
       width: 100%;
+      margin-top: 20px;
     }
   }
 }

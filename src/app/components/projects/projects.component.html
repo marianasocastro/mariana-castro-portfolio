@@ -13,8 +13,8 @@
         <p class="paragraph">{{ project.about | translate}}
         </p>
         <div class="btns">
-          <button class="btn-primary-small btn-gradient"><a href="">{{ 'PROJECTS.BTN_BROWSER' | translate}}</a></button>
-          <button class="btn-secondary-small"><a href="">{{ 'PROJECTS.BTN_DETAILS' | translate}}</a></button>
+          <button class="btn-primary-small btn-gradient"><a [href]=project.url_browser target="_blank" >{{ 'PROJECTS.BTN_BROWSER' | translate}}</a></button>
+          <button class="btn-secondary-small"><a [href]=project.url_github target="_blank">{{ 'PROJECTS.BTN_DETAILS' | translate}}</a></button>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 {
   "NAVBAR": {
-    "ABOUT": "Sobre",
+    "ABOUT": "Sobre mim",
     "PROJECTS": "Projetos",
     "RESUME": "Currículo",
     "CONTACT": "Contato",
@@ -11,16 +11,17 @@
   "HEADER":{
     "HELLO":"Oi, eu sou Mariana,",
     "ROLE": "Desenvolvedora Frontend e UI Designer",
-    "TEXT": "Eu prospero na criatividade, abraço desafios e sou meticulosamente atento aos detalhes, garantindo que cada projeto em que trabalho não seja apenas funcional, mas também cuidadosamente elaborado.",
-    "BTN_TALK": "ENTRE EM CONTATO",
-    "BTN_PROJECTS": "VEJA MEUS PROJETOS"
+    "TEXT": "Eu valorizo a criatividade, gosto de enfrentar desafios e presto muita atenção aos detalhes, garantindo que cada projeto em que trabalho seja funcional e bem elaborado.",
+    "BTN_TALK": "VEJA MEUS PROJETOS",
+    "BTN_PROJECTS": "SOBRE MIM"
   },
   "ABOUT":{
     "TITLE": "Sobre mim",
-    "PARAGRAPH_1":"Sou Desenvolvedora Frontend com 2 anos de experiência, especializada em Angular e TypeScript, baseada em São Paulo, Brasil. Minha expertise está na prototipação e desenvolvimento de aplicações web responsivas e interativas utilizando HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, Angular e Figma.",
-    "PARAGRAPH_2":"Dou grande ênfase à colaboração, contribuindo ativamente com ideias inovadoras no desenvolvimento web. Além dos meus esforços profissionais, mantenho uma abordagem proativa, oferecendo insights técnicos e sugestões que melhoram os resultados dos projetos.",
-    "PARAGRAPH_3":"Fora do trabalho, permaneço dedicada a explorar as últimas tendências e avanços no desenvolvimento de Frontend, aprimorando constantemente minhas habilidades em Angular, TypeScript, bibliotecas de UI, melhores práticas e metodologias de teste automatizado.",
-    "RESUME": "CURRÍCULO"
+    "PARAGRAPH_1":"Sou Desenvolvedora Frontend com 2 anos de experiência, especializada em Angular e TypeScript, atualmente morando em São Paulo, Brasil. Tenho expertise em prototipação e desenvolvimento de aplicações web responsivas e interativas usando HTML, CSS, SASS, Tailwind, JavaScript, TypeScript, Angular e Figma.",
+    "PARAGRAPH_2":"Valorizo a colaboração, sou proativa e gosto de contribuir com ideias e insights nos diferentes projetos em que atuo. Além disso, busco sempre me manter atualizada com as novidades da minha área, com uma rotina de estudos que inclui Angular, TypeScript, bibliotecas de UI, melhores práticas e metodologias de teste automatizado.",
+    "PARAGRAPH_3":"No meu tempo livre, gosto de ir ao cinema, escutar música e fazer atividades ao ar livre, como andar de bicicleta ou fazer caminhadas.",
+    "RESUME": "CURRÍCULO",
+    "RESUME_LINK":  "../../../assets/Mariana Castro - Curriculo.pdf"
   },
   "TOOLS":{
     "TITLE": "Ferramentas que eu utilizo",
@@ -42,7 +43,7 @@
   },
   "CONTACT":{
     "TITLE": "Entre em contato",
-    "TEXT":"Tem um projeto em mente? Gostaria de fazer uma parceria ou trabalhar juntos? Entre em contato através do formulário e eu retornarei em até 48 horas.",
+    "TEXT":"Tem um projeto em mente? Gostaria de fazer uma parceria ou trabalhar juntos? Entre em contato através do e-mail e eu retornarei em até 48 horas.",
     "FORM_NAME": "Seu Nome",
     "FORM_NAME_PLACEHOLDER": "Insira seu nome",
     "FORM_EMAIL": "Seu E-mail",

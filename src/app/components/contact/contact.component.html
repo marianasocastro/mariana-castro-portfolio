@@ -1,15 +1,17 @@
-<section id="contact" class="container">
+<!-- <section id="contact" class="container">
   <div class="contact-text">
     <h2 class="text-h2 gradient-text">{{ 'CONTACT.TITLE' | translate }}</h2>
     <p class="paragraph">{{ 'CONTACT.TEXT' | translate }}</p>
     <div class="navbar-social">
       <a class="social-icons" href="https://www.linkedin.com/in/marianasocastro/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
       <a class="social-icons" href="https://github.com/marianasocastro" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a class="social-icons" href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </div>
 
-  <form action="">
+  <form
+  action="https://formspree.io/f/xkgwglpr"
+  method="POST"
+  >
     <div class="form-section">
       <label class="paragraph" for="name">{{ 'CONTACT.FORM_NAME' | translate }}</label>
       <input class="paragraph" type="text" name="name" id="name" placeholder="{{ 'CONTACT.FORM_NAME_PLACEHOLDER' | translate }}">
@@ -27,9 +29,21 @@
 
     <div class="form-section">
       <label class="paragraph" for="subject">{{ 'CONTACT.FORM_MESSAGE' | translate }}</label>
-      <textarea class="paragraph" name="subject" id="subject" placeholder="{{ 'CONTACT.FORM_MESSAGE_PLACEHOLDER' | translate }}"></textarea>
+      <textarea class="paragraph" name="subject-text" id="subject-text" placeholder="{{ 'CONTACT.FORM_MESSAGE_PLACEHOLDER' | translate }}"></textarea>
     </div>
     <button type="submit" class="btn-primary btn-gradient">{{ 'CONTACT.BTN_SUBMIT' | translate }}</button>
   </form>
 
+</section> -->
+
+
+<section id="contact" class="container">
+  <div class="contact-text">
+    <p class="text-h2">{{ 'CONTACT.TEXT' | translate }}</p>
+    <a href="mailto:marianasocastro1@gmail.com" target="_blank"><h2 class="hero-text gradient-text-2">{{ 'CONTACT.TITLE' | translate }} <i class="fa-solid fa-arrow-right"></i></h2></a>
+    <div class="navbar-social">
+      <a class="social-icons" href="https://www.linkedin.com/in/marianasocastro/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a class="social-icons" href="https://github.com/marianasocastro" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
 </section>
