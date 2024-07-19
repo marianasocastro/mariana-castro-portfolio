@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['en', 'pt']);
-    this.translate.setDefaultLang('pt');
+    this.translate.setDefaultLang('en');
   }
 
   switchLanguage(event: Event) {
