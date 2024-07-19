@@ -28,9 +28,15 @@
   </div>
 
   <div class="btns">
-    <select (change)="switchLanguage($event)" class="custom-select">
+    <!-- <select (change)="switchLanguage($event)" class="custom-select">
       <option value="en">{{ 'NAVBAR.ENGLISH' | translate }}</option>
       <option value="pt">{{ 'NAVBAR.PORTUGUESE' | translate }}</option>
+    </select> -->
+
+    <select (change)="switchLanguage($event)" class="custom-select">
+      <option *ngFor="let lang of languages" [value]="lang.code">
+        {{ lang.label | translate }}
+      </option>
     </select>
     <button class="btn-primary btn-gradient hide-btn" type="button"><a href="#contact">{{ 'NAVBAR.LETS_TALK' | translate }}</a></button>
     <button class="navbar-toggler" (click)="toggleNavbar()">

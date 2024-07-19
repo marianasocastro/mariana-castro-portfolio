@@ -1,27 +1,63 @@
-# PortfolioMarianaCastro
+# MarianaCastroPortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+<h1 align="center">
+    <img alt="Capa Projeto" title="#CapaProjeto" src="./src/assets/portfolio-screen.png" />
+</h1>
 
-## Development server
+<h4 align="center"> 
+	🚧 Mariana Castro - Portfólio 🚧
+</h4>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p align="center">
+	<img alt="Status Em Desenvolvimento" src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-green">
+	<!-- <img alt="Status Concluído" src="https://img.shields.io/badge/STATUS-CONCLU%C3%8DDO-brightgreen"> -->
+</p>
 
-## Code scaffolding
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+  <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-autor">Autor</a> • 
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## 💻 Sobre o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ Este site, desenvolvido com Angular 14 e TypeScript, foi criado para fornecer uma visão detalhada das minhas habilidades profissionais, projetos e informações de contato. Nele você poderá conhecer mais sobre meu trabalho e como posso ajudar a transformar ideias em realidade através do desenvolvimento web. Além disso, ele possui a opção de idiomas, podendo ser alternado de inglês para português, contando também com responsividade em diferentes tamanhos de telas.
 
-## Running unit tests
+Acesse via Browser: [Mariana Castro - Portfolio](marianacastro.tech)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## ⚙️ Funcionalidades
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Informações Profissionais: Uma seção dedicada a destacar minha experiência, habilidades técnicas e conquistas profissionais.
 
-## Further help
+- Projetos: Uma vitrine dos projetos que desenvolvi, com descrições detalhadas, tecnologias utilizadas e links para visualizar ou acessar o código-fonte.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Contato: Informações sobre como entrar em contato comigo, incluindo um formulário para envio de mensagens diretamente através do site.
+
+
+---
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **Website**  ([Angular](https://angular.dev/)  +  [TypeScript](https://www.typescriptlang.org/))
+
+#### [](https://github.com/cubos-academy/academy-template-readme-projects#utilit%C3%A1rios)**Utilitários**
+
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
+-   Ícones:  **[Font Awesome](https://fontawesome.com/)**
+-   Fontes:  **[Bai Jamjuree](https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap)**
+
+---
+
+## 🧙‍♂️ Autor
+
+Feito com ❤️ por Mariana Castro👋🏽 [Entre em contato!](https://www.linkedin.com/in/marianasocastro/)
+
+
+
+
